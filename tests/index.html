@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <style>
+            #results {
+                outline: 1px solid green;
+                margin: 20px;
+                padding: 20px;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>        
+        <script src="json-editor.js"></script>
+        <div id="editor1">[1,2,"hello", [1,2,3], { "key": "value", "number": 10.40 }]</div>
+        <div id="editor2"></div>
+        <script>
+            JSON_Editor(document.getElementById('editor1'))
+        </script>
+    </body>
+</html>

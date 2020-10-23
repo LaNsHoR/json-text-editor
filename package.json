@@ -1,0 +1,32 @@
+{
+  "name": "json-editor",
+  "version": "0.0.1",
+  "description": "HTML JSON text editor with indentation and syntax highlighting on the fly.",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaNsHoR/json-editor.git"
+  },
+  "keywords": [
+    "json",
+    "editor",
+    "component"
+  ],
+  "author": "Ernesto Azuar <lanshor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LaNsHoR/json-editor/issues"
+  },
+  "homepage": "https://github.com/LaNsHoR/json-editor#readme",
+  "dependencies": {
+    "html-builder": "github:LaNsHoR/HTML-builder"
+  },
+  "devDependencies": {
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
