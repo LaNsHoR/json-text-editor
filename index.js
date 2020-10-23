@@ -6,7 +6,7 @@ class JSON_Editor {
         this.element = element
         this.element.addEventListener('keyup', () => this.format(this.element) )
         this.element.contentEditable = true
-        this.element.classList.add('JSON_Editor')
+        this.element.classList.add('JsonEditor')
         this.format(this.element, false)
     }
 
@@ -101,28 +101,28 @@ class JSON_Editor {
 
     json_format_object(input, offset=0) {
         let final = ''
-        final += `<span class="braces">{</span><br>\n`
+        final += `<span class="JsonEditorBraces">{</span><br>\n`
         final += Object.keys(input).map((key, index, list) => {
-            return `${'&nbsp;'.repeat(offset+3)}<span class="key"><span class="quotes">\"</span>${key}<span class="quotes">\"</span></span><span class="colon">:</span><span class="value">${this.json_format(input[key], offset+3)}</span>${index < list.length-1 ? '<span class="comma">,</span>' : ''}<br>\n`
+            return `${'&nbsp;'.repeat(offset+3)}<span class="JsonEditorKey"><span class="JsonEditorQuotes">\"</span>${key}<span class="JsonEditorQuotes">\"</span></span><span class="JsonEditorColon">:</span><span class="JsonEditorValue">${this.json_format(input[key], offset+3)}</span>${index < list.length-1 ? '<span class="JsonEditorComma">,</span>' : ''}<br>\n`
         }).join('')
         final += '&nbsp;'.repeat(offset)
-        final += `<span class="braces">}</span>`
+        final += `<span class="JsonEditorBraces">}</span>`
         return final
     }
     
     json_format_array(input, offset=0) {
         let final = ''
-        final += `<span class="brackets">[</span><br>\n`
+        final += `<span class="JsonEditorBrackets">[</span><br>\n`
         final += input.map((value, index, list) => {
-            return `${'&nbsp;'.repeat(offset+3)}<span class="value">${this.json_format(value, offset+3)}</span>${index < list.length-1 ? '<span class="comma">,</span>' : ''}<br>\n`
+            return `${'&nbsp;'.repeat(offset+3)}<span class="JsonEditorValue">${this.json_format(value, offset+3)}</span>${index < list.length-1 ? '<span class="JsonEditorComma">,</span>' : ''}<br>\n`
         }).join('')
         final += '&nbsp;'.repeat(offset)
-        final += `<span class="brackets">]</span>`
+        final += `<span class="JsonEditorBrackets">]</span>`
         return final
     }
     
     json_format_string(input) {
-        return `<span class="string"><span class="quotes">\"</span>${input}<span class="quotes">\"</span></span>`;
+        return `<span class="JsonEditorString"><span class="JsonEditorQuotes">\"</span>${input}<span class="JsonEditorQuotes">\"</span></span>`;
     }
     
     json_format(input, offset=0) {

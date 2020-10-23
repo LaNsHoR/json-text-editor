@@ -1,37 +1,37 @@
 const style = {
-    ".JSON_Editor" : {
+    ".JsonEditor" : {
         background: '#333333',
         width: '50%',
         fontFamily: 'monospace',
         padding: '4px',
         color: '#ffffff'
     },
-    ".key" : {
+    ".JsonEditorKey" : {
         color: '#ff7abe'
     },
-    ".value" : {
+    ".JsonEditorValue" : {
         color: '#3fef33'
     },
-    ".braces" : {
+    ".JsonEditorBraces" : {
         color: '#84aecc'
     },
-    ".quotes" : {
+    ".JsonEditorQuotes" : {
         color: '#ffb020'
     },
-    ".brackets" : {
+    ".JsonEditorBrackets" : {
         color: '#d26a6a'
     },
-    ".colon" : {
+    ".JsonEditorColon" : {
         color: '#ffffff'
     },
-    ".comma" : {
+    ".JsonEditorComma" : {
         color: '#ffee25'
     },
-    ".string" : {
+    ".JsonEditorString" : {
         color: '#7eb9f7',
         background: '#414166',
     },
-    ".string .quotes" : {
+    ".JsonEditorString .JsonEditorQuotes" : {
         color: '#20f5ff'
     },
 }
