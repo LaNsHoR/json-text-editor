@@ -87,7 +87,7 @@ class JSON_Editor {
             return
         }
     
-        if(JSON.stringify(content) == element.dataset.last_content)
+        if(!content || JSON.stringify(content) == element.dataset.last_content)
             return
             
         const final = this.json_format(content)
