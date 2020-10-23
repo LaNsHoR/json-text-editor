@@ -11,10 +11,16 @@
     </head>
     <body>        
         <script src="json-editor.js"></script>
+        <p>editor with valid JSON content</p>
         <div id="editor1">[1,2,"hello", [1,2,3], { "key": "value", "number": 10.40 }]</div>
-        <div id="editor2"></div>
+        <p>editor with invalid JSON</p>
+        <div id="editor2">[1,2,"hello", [1,2,3], { "key": "value", "number": </div>
+        <p>empty editor</p>
+        <div id="editor3"></div>
         <script>
             JSON_Editor(document.getElementById('editor1'))
+            JSON_Editor(document.getElementById('editor2'))
+            JSON_Editor(document.getElementById('editor3'))
         </script>
     </body>
 </html>
