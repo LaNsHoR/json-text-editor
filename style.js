@@ -1,7 +1,6 @@
 const style = {
     ".JsonEditor" : {
         background: '#333333',
-        width: '50%',
         fontFamily: 'monospace',
         padding: '4px',
         color: '#ffffff'
