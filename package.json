@@ -1,6 +1,6 @@
 {
   "name": "json-editor",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "HTML JSON text editor with indentation and syntax highlighting on the fly.",
   "main": "index.js",
   "scripts": {
