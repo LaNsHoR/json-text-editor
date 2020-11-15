@@ -100,6 +100,9 @@ class JSON_Editor {
     }
 
     json_format_object(input, offset=0) {
+        // in JS typeof null == = object (legacy bug), for null input we just return null
+        if( input === null )
+            return '<span class="JsonEditorNull">null</span>'
         let final = ''
         final += `<span class="JsonEditorBraces">{</span><br>\n`
         final += Object.keys(input).map((key, index, list) => {

@@ -18,9 +18,12 @@
         <p>empty editor</p>
         <div id="editor3"></div>
         <script>
-            JSON_Editor(document.getElementById('editor1'))
+            const editor1 = document.getElementById('editor1')
+            JSON_Editor(editor1)
             JSON_Editor(document.getElementById('editor2'))
             JSON_Editor(document.getElementById('editor3'))
+
+            editor1.addEventListener('keyup', () => console.log('Editor 1 modified', editor1.dataset.last_content ) )
         </script>
     </body>
 </html>

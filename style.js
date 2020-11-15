@@ -26,6 +26,9 @@ const style = {
     ".JsonEditorComma" : {
         color: '#ffee25'
     },
+    ".JsonEditorNull" : {
+        color: '#21d6ff'
+    },
     ".JsonEditorString" : {
         color: '#7eb9f7',
         background: '#414166',
